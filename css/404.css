@@ -1,0 +1,32 @@
+html,
+body {
+    min-width: 1280px;
+    font-family: "OpenSans", "Roboto", Calibri;
+    background: radial-gradient(ellipse at center, #2c3e50 0%,#101317 100%);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #2c3e50;
+    padding: 0px;
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#page404 {
+    font-size: 12vw;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+#page404 span {
+    font-size: 3vw;
+    display: block;
+    margin-bottom: -3vw;
+}

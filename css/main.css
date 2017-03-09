@@ -1,0 +1,14 @@
+/*@font-face {
+    font-family: OpenSans;
+    src: url(open-sans.ttf);
+}*/
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
