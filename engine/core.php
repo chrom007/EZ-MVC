@@ -12,19 +12,19 @@ class Controller {
 	//HELP -> render("View_name", "Ask - render_layout?", "Main Layout")
 	public function render($view, $render_layout = false, $layout = "main") {
 		if (empty($this->title)) $this->title = $this->config->default_title;
-		$layout = "views/layouts/".$layout.".php";
-		$this->template = $view;
-		$view = "views/".$view.".php";
+		$layout_file = "views/layouts/".$layout.".php";
+		$view_file = "views/".$view.".php";
 		
 		//render_layout - RENDER VIEW / LAYOUT
 		if ($render_layout == false) {
-			if (file_exists($view)) 
-				include($view);
+			if (file_exists($view_file)) 
+				include($view_file);
 			else new Page_404();
 		}
 		else {
-			if (file_exists($layout))
-				include($layout);
+			$this->template = $view;
+			if (file_exists($layout_file))
+				include($layout_file);
 			else new Page_404();
 		}
 	}

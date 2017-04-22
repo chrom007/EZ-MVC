@@ -73,28 +73,6 @@
 			$this->database->close();
 		}
 
-
-
-		public function default_user($array) {
-			$time = time();
-			$default = array(
-				'avatar' => '/img/avatar/default.png',
-				'gender' => 'male',
-				'money' => 100,
-				'reg_date' => "$time",
-				'last_login' => "$time",
-			);
-
-			foreach ($default as $key => $value) {
-				$array[$key] = $value;
-			}
-
-			return $array;
-		}
-
-
-
-
 	}
 	
 ?>
